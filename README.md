@@ -6,12 +6,22 @@ The purpose of this application is to provide users with the ability to annotate
 
 ## Build Instructions
 
+### UI API (backend)
+
 ```bash
-$ make
+$ cd ui-api
+$ ./mvnw clean install springboot:run
 ```
 
-Run Locally
+### UI (Frontend)
 
 ```bash
-$ make local
+$ cd honest-truth-ui
+$ npm start
+```
+
+### Database
+
+```bash
+$ docker-compose up
 ```

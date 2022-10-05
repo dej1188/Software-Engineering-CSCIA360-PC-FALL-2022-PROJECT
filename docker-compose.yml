@@ -7,4 +7,6 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-      - POSTGRESE_DB=honest_truth
+      - POSTGRES_DB=honest_truth
+    expose:
+      - 5432
