@@ -4,6 +4,7 @@ target
 .project
 .classpath
 dist
+.DS_Store
 
 # Numerous always-ignore extensions
 *.bak
