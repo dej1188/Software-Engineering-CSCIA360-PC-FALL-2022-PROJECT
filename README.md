@@ -10,7 +10,7 @@ The purpose of this application is to provide users with the ability to annotate
 
 ```bash
 $ cd ui-api
-$ ./mvnw clean install springboot:run
+$ ./mvnw clean install spring-boot:run
 ```
 
 ### UI (Frontend)
