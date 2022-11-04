@@ -26,14 +26,17 @@ header {
 #main-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .video-wrapper {
-  width: 50%;
+  min-width: 650px;
+  width: 45%;
 }
 
 .notation-wrapper {
-  width: 40%;
+  width: 50%;
+  padding: 0 20px;
 }
 
 .item {
