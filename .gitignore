@@ -5,6 +5,8 @@ target
 .classpath
 dist
 .DS_Store
+.terraform
+.env
 
 # Numerous always-ignore extensions
 *.bak

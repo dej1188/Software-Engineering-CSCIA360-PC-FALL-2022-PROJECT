@@ -59,5 +59,36 @@ header {
 }
 
 .active {
+  /*animation: increasePadding 2s;*/
+  padding: 16px 4px;
   border-left: 4px solid #61dafb;
+}
+
+div.active {
+  border-right: 1px solid red;
+}
+
+/*@keyframes increasePadding {*/
+/*  from { padding: 4px }*/
+/*  to { padding: 16px 4px }*/
+/*}*/
+
+.add-notation-wrapper {
+  margin: 20px;
+  background-color: #eee;
+  padding: 20px;
+  text-align: left;
+}
+
+.notation-time {
+  width: 80px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.notation-description {
+  display: inline-block;
+  width: 90%;
+  height: 4em;
+  margin: 10px;
 }

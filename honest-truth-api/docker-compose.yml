@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  api:
+    build: ./
+    environment:
+      - ENV=production
+      - PORT=8080
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=honest_truth
+      - DB_PASS=honest_truth
+      - DB_NAME=honest_truth
+      - DB_AUTO_MIGRATE=1
+    depends_on:
+      - postgres
+    ports:
+      - '8080:8080'
+  postgres:
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=honest_truth
+      - POSTGRES_PASSWORD=honest_truth
+      - POSTGRES_DB=honest_truth
+    ports:
+      - '5432:5432'
+    volumes:
+      - data:/var/lib/postgresql/data
+volumes:
+  data:
+
